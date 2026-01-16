@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="540" viewBox="0 0 400 540" role="img" aria-label="Cover: Principles of Regional Geology">
+  <rect width="100%" height="100%" fill="#fff8f0"/>
+  <rect x="20" y="20" width="360" height="500" rx="12" fill="#fff" stroke="#e6d8c9"/>
+  <!-- stylized strata -->
+  <g transform="translate(40,60)">
+    <rect x="0" y="0" width="320" height="40" fill="#f1e3d8"/>
+    <rect x="0" y="50" width="320" height="36" fill="#e8d0bc"/>
+    <rect x="0" y="100" width="320" height="44" fill="#e0bfa6"/>
+    <rect x="0" y="152" width="320" height="48" fill="#d4a58b"/>
+    <rect x="0" y="206" width="320" height="60" fill="#c68868"/>
+    <rect x="0" y="270" width="320" height="90" fill="#b76b4b"/>
+  </g>
+  <text x="40" y="430" font-family="Merriweather, serif" font-size="20" fill="#2b2b2b">Principles of</text>
+  <text x="40" y="456" font-family="Merriweather, serif" font-size="28" font-weight="700" fill="#1f2937">Regional Geology</text>
+  <text x="40" y="496" font-family="Inter, sans-serif" font-size="12" fill="#475569">Dr. Rauf Nizami</text>
+</svg>
