@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="160" viewBox="0 0 240 160" role="img" aria-label="Sketch thumbnail: measurement diagram">
+  <rect width="100%" height="100%" fill="#f6fbff"/>
+  <g stroke="#334155" stroke-width="1.6" fill="none">
+    <line x1="20" y1="20" x2="220" y2="20"/>
+    <line x1="20" y1="40" x2="220" y2="40"/>
+    <line x1="20" y1="60" x2="220" y2="60"/>
+    <path d="M40 100 L80 60 L120 140 L160 80" stroke="#0b6cff" stroke-width="2"/>
+  </g>
+</svg>
