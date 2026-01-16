@@ -2,158 +2,142 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dr. Rauf Nizami — Scientific Writings</title>
-  <meta name="description" content="Books, articles, scientific sketches and photographs by Dr. Rauf Nizami.">
+
+  <meta name="description" content="Books, articles, sketches and geological photographs by Dr. Rauf Nizami.">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/styles.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Dr. Rauf Nizami",
-    "description": "Geologist, author and researcher.",
-    "url": "https://engineernr1.github.io/",
-    "sameAs": []
-  }
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <h1 class="site-title">Dr. Rauf Nizami</h1>
-        <p class="site-subtitle">Books, articles, sketches & geological photographs</p>
-      </div>
-      <nav aria-label="Main navigation" class="main-nav">
-        <a href="#works">Works</a>
-        <a href="#articles">Articles</a>
-        <a href="#sketches">Sketches</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#about">About</a>
-      </nav>
-      <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu">Menu</button>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <h1>Dr. Rauf Nizami</h1>
+      <p>Geologist · Author · Researcher</p>
     </div>
-  </header>
-
-  <main>
-    <section class="hero container" id="hero">
-      <img src="assets/profile.svg" alt="Portrait illustration of Dr. Rauf Nizami" class="hero-photo" />
-      <div class="hero-content">
-        <h2>Sharing decades of geological work</h2>
-        <p>Welcome — this site collects books, peer-reviewed articles, technical sketches, and photographs documenting a lifetime of geological research. Feel free to browse or download PDFs of complete works.</p>
-        <p class="cta-row">
-          <a class="btn primary" href="#works">View Works</a>
-          <a class="btn" href="#contact">Contact</a>
-        </p>
-      </div>
-    </section>
-
-    <section class="container section" id="works">
-      <h3>Featured works</h3>
-      <p class="muted">Complete books and monographs</p>
-      <div class="grid cards">
-        <article class="card">
-          <img src="assets/book1-cover.svg" alt="Cover: Principles of Regional Geology" />
-          <div class="card-body">
-            <h4>Principles of Regional Geology</h4>
-            <p class="muted">Publisher — Year</p>
-            <p class="excerpt">A concise monograph on regional stratigraphy and structural interpretation.</p>
-            <p class="card-actions">
-              <a class="btn" href="assets/book1.pdf" download>Download PDF</a>
-            </p>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="assets/book2-cover.svg" alt="Cover: Field Methods in Geology" />
-          <div class="card-body">
-            <h4>Field Methods in Geology</h4>
-            <p class="muted">Publisher — Year</p>
-            <p class="excerpt">Practical guide to field mapping, sampling, and documentation.</p>
-            <p class="card-actions">
-              <a class="btn" href="assets/book2.pdf" download>Download PDF</a>
-            </p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="container section" id="articles">
-      <h3>Articles</h3>
-      <p class="muted">Selected peer-reviewed and popular articles</p>
-      <ul class="articles-list">
-        <li><a href="assets/article-2023.pdf">"Late Quaternary Fault Activity" — Journal Name, 2023</a></li>
-        <li><a href="assets/article-2018.pdf">"Stratigraphic Correlation Techniques" — Journal Name, 2018</a></li>
-      </ul>
-    </section>
-
-    <section class="container section" id="sketches">
-      <h3>Scientific sketches & diagrams</h3>
-      <p class="muted">Hand-drawn diagrams and technical sketches</p>
-
-      <div class="filter-row">
-        <label for="filter">Filter:</label>
-        <select id="filter" aria-label="Filter sketches">
-          <option value="all">All</option>
-          <option value="maps">Maps</option>
-          <option value="sections">Sections</option>
-          <option value="diagrams">Diagrams</option>
-        </select>
-      </div>
-
-      <div class="gallery grid" id="gallery-grid" data-type="sketches">
-        <button class="thumb" data-full="assets/sketch1.svg" data-title="Sketch: Geological cross-section" data-category="sections">
-          <img src="assets/sketch1-thumb.svg" alt="Sketch: geological cross-section" />
-        </button>
-        <button class="thumb" data-full="assets/sketch2.svg" data-title="Sketch: Measurement diagram" data-category="diagrams">
-          <img src="assets/sketch2-thumb.svg" alt="Sketch: measurement diagram" />
-        </button>
-        <button class="thumb" data-full="assets/sketch3.svg" data-title="Sketch: Map excerpt" data-category="maps">
-          <img src="assets/sketch3-thumb.svg" alt="Sketch: map excerpt" />
-        </button>
-      </div>
-    </section>
-
-    <section class="container section" id="gallery">
-      <h3>Photographic gallery</h3>
-      <p class="muted">Field photos and laboratory images</p>
-      <div class="gallery grid" id="photo-grid">
-        <button class="thumb" data-full="assets/photo1.svg" data-title="Field photo: fold in limestone">
-          <img src="assets/photo1-thumb.svg" alt="Field photo: fold in limestone" />
-        </button>
-        <button class="thumb" data-full="assets/photo2.svg" data-title="Laboratory thin section">
-          <img src="assets/photo2-thumb.svg" alt="Laboratory thin section" />
-        </button>
-      </div>
-    </section>
-
-    <section class="container section" id="about">
-      <h3>About</h3>
-      <p>Dr. Rauf Nizami — geologist with decades of experience in regional mapping, stratigraphy, and structural interpretation. Academic positions and notable work are summarized here.</p>
-      <address id="contact">
-        <strong>Contact</strong><br/>
-        Email: <a href="mailto:rauf.nizami+pakgeo@gmail.com">rauf.nizami+pakgeo@gmail.com</a><br/>
-        For permissions or high-resolution files, please use the email above.
-      </address>
-    </section>
-  </main>
-
-  <footer class="site-footer container">
-    <p>&copy; <span id="year"></span> Dr. Rauf Nizami. Site by <a href="https://github.com/engineernr1">engineernr1</a>.</p>
-    <p class="muted">This site shares writings for educational purposes. If you need a specific license or restrictions, adjust the footer accordingly.</p>
-  </footer>
-
-  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
-    <button class="modal-close" aria-label="Close preview">&times;</button>
-    <figure class="modal-content">
-      <img id="modal-img" src="" alt="">
-      <figcaption id="modal-caption"></figcaption>
-    </figure>
+    <nav class="main-nav">
+      <a href="#works">Works</a>
+      <a href="#articles">Articles</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+    </nav>
   </div>
+</header>
 
-  <script src="assets/script.js" defer></script>
+<main>
+
+<section class="hero">
+  <div class="container hero-inner">
+    <img src="assets/profile.svg" alt="Portrait of Dr. Rauf Nizami">
+    <div class="hero-text">
+      <h2>Decades of geological research, preserved and shared</h2>
+      <p>
+        This site presents books, peer-reviewed articles, scientific sketches,
+        and field photographs documenting a lifetime of work in geology and
+        regional mapping.
+      </p>
+      <a href="#works" class="btn">Browse publications</a>
+    </div>
+  </div>
+</section>
+
+<section id="works" class="section">
+  <div class="container">
+    <h3>Books & monographs</h3>
+    <div class="grid">
+
+      <article class="card">
+        <img src="assets/book1-cover.svg" alt="Principles of Regional Geology cover">
+        <div class="card-body">
+          <h4>Principles of Regional Geology</h4>
+          <p class="meta">Publisher · Year</p>
+          <p class="desc">A concise monograph on stratigraphy and structural interpretation.</p>
+          <a href="assets/book1.pdf" class="btn small">Download PDF</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="assets/book2-cover.svg" alt="Field Methods in Geology cover">
+        <div class="card-body">
+          <h4>Field Methods in Geology</h4>
+          <p class="meta">Publisher · Year</p>
+          <p class="desc">Practical guidance on geological field mapping and documentation.</p>
+          <a href="assets/book2.pdf" class="btn small">Download PDF</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="articles" class="section alt">
+  <div class="container">
+    <h3>Selected articles</h3>
+    <ul class="article-list">
+      <li>
+        <a href="assets/article-2023.pdf">
+          <strong>Late Quaternary Fault Activity</strong><br>
+          <span>Journal Name, 2023</span>
+        </a>
+      </li>
+      <li>
+        <a href="assets/article-2018.pdf">
+          <strong>Stratigraphic Correlation Techniques</strong><br>
+          <span>Journal Name, 2018</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="gallery" class="section">
+  <div class="container">
+    <h3>Photographic gallery</h3>
+    <div class="grid gallery">
+      <img src="assets/photo1-thumb.svg" alt="Fold in limestone">
+      <img src="assets/photo2-thumb.svg" alt="Laboratory thin section">
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section alt">
+  <div class="container narrow">
+    <h3>About</h3>
+    <p>
+      Dr. Rauf Nizami is a geologist with decades of experience in regional
+      mapping, stratigraphy, and structural interpretation. His work spans
+      academic research, field studies, and technical documentation.
+    </p>
+
+    <p class="contact">
+      <strong>Contact:</strong><br>
+      <a href="mailto:rauf.nizami+pakgeo@gmail.com">
+        rauf.nizami+pakgeo@gmail.com
+      </a>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>
+      © <span id="year"></span> Dr. Rauf Nizami · Educational use only
+    </p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
