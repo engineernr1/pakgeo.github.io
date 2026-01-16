@@ -3,20 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Dr. [Father's Name] — Scientific Writings</title>
-  <meta name="description" content="Books, articles, scientific sketches and photographs by Dr. [Father's Name].">
+  <title>Dr. Rauf Nizami — Scientific Writings</title>
+  <meta name="description" content="Books, articles, scientific sketches and photographs by Dr. Rauf Nizami.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Change fonts or remove if you prefer local fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Dr. [Father's Name]",
-    "description": "Researcher and author specializing in [subject].",
-    "url": "https://engineernr1.github.io/pakgeo",
+    "name": "Dr. Rauf Nizami",
+    "description": "Geologist, author and researcher.",
+    "url": "https://engineernr1.github.io/",
     "sameAs": []
   }
   </script>
@@ -25,8 +24,8 @@
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
-        <h1 class="site-title">Dr. [Father's Name]</h1>
-        <p class="site-subtitle">Books, articles, sketches & scientific photographs</p>
+        <h1 class="site-title">Dr. Rauf Nizami</h1>
+        <p class="site-subtitle">Books, articles, sketches & geological photographs</p>
       </div>
       <nav aria-label="Main navigation" class="main-nav">
         <a href="#works">Works</a>
@@ -41,10 +40,10 @@
 
   <main>
     <section class="hero container" id="hero">
-      <img src="assets/profile.jpg" alt="Portrait of Dr. [Father's Name]" class="hero-photo" />
+      <img src="assets/profile.svg" alt="Portrait illustration of Dr. Rauf Nizami" class="hero-photo" />
       <div class="hero-content">
-        <h2>Sharing decades of scientific work</h2>
-        <p>Welcome — this site collects books, peer-reviewed articles, technical sketches, and photographs documenting a lifetime of research in [field]. Feel free to browse or download PDFs of complete works.</p>
+        <h2>Sharing decades of geological work</h2>
+        <p>Welcome — this site collects books, peer-reviewed articles, technical sketches, and photographs documenting a lifetime of geological research. Feel free to browse or download PDFs of complete works.</p>
         <p class="cta-row">
           <a class="btn primary" href="#works">View Works</a>
           <a class="btn" href="#contact">Contact</a>
@@ -56,26 +55,24 @@
       <h3>Featured works</h3>
       <p class="muted">Complete books and monographs</p>
       <div class="grid cards">
-        <!-- Example card: duplicate and edit for each book -->
         <article class="card">
-          <img src="assets/book1-cover.jpg" alt="Cover: Title of Book 1" />
+          <img src="assets/book1-cover.svg" alt="Cover: Principles of Regional Geology" />
           <div class="card-body">
-            <h4>Title of Book 1</h4>
+            <h4>Principles of Regional Geology</h4>
             <p class="muted">Publisher — Year</p>
-            <p class="excerpt">Short description (1–2 lines). A quick summary of scope and significance.</p>
+            <p class="excerpt">A concise monograph on regional stratigraphy and structural interpretation.</p>
             <p class="card-actions">
               <a class="btn" href="assets/book1.pdf" download>Download PDF</a>
-              <a class="btn ghost" href="#about">Details</a>
             </p>
           </div>
         </article>
 
         <article class="card">
-          <img src="assets/book2-cover.jpg" alt="Cover: Title of Book 2" />
+          <img src="assets/book2-cover.svg" alt="Cover: Field Methods in Geology" />
           <div class="card-body">
-            <h4>Title of Book 2</h4>
+            <h4>Field Methods in Geology</h4>
             <p class="muted">Publisher — Year</p>
-            <p class="excerpt">Short description of this book's theme and audience.</p>
+            <p class="excerpt">Practical guide to field mapping, sampling, and documentation.</p>
             <p class="card-actions">
               <a class="btn" href="assets/book2.pdf" download>Download PDF</a>
             </p>
@@ -88,8 +85,8 @@
       <h3>Articles</h3>
       <p class="muted">Selected peer-reviewed and popular articles</p>
       <ul class="articles-list">
-        <li><a href="assets/article-2023.pdf">"Title of Article" — Journal Name, 2023</a></li>
-        <li><a href="assets/article-2018.pdf">"Another Article" — Journal Name, 2018</a></li>
+        <li><a href="assets/article-2023.pdf">"Late Quaternary Fault Activity" — Journal Name, 2023</a></li>
+        <li><a href="assets/article-2018.pdf">"Stratigraphic Correlation Techniques" — Journal Name, 2018</a></li>
       </ul>
     </section>
 
@@ -102,21 +99,20 @@
         <select id="filter" aria-label="Filter sketches">
           <option value="all">All</option>
           <option value="maps">Maps</option>
-          <option value="graphs">Graphs</option>
-          <option value="designs">Designs</option>
+          <option value="sections">Sections</option>
+          <option value="diagrams">Diagrams</option>
         </select>
       </div>
 
       <div class="gallery grid" id="gallery-grid" data-type="sketches">
-        <!-- Thumbnails: clicking opens modal -->
-        <button class="thumb" data-full="assets/sketch1.jpg" data-title="Sketch 1: Geological cross-section">
-          <img src="assets/sketch1-thumb.jpg" alt="Sketch: geological cross-section" />
+        <button class="thumb" data-full="assets/sketch1.svg" data-title="Sketch: Geological cross-section" data-category="sections">
+          <img src="assets/sketch1-thumb.svg" alt="Sketch: geological cross-section" />
         </button>
-        <button class="thumb" data-full="assets/sketch2.jpg" data-title="Sketch 2: Measurement diagram">
-          <img src="assets/sketch2-thumb.jpg" alt="Sketch: measurement diagram" />
+        <button class="thumb" data-full="assets/sketch2.svg" data-title="Sketch: Measurement diagram" data-category="diagrams">
+          <img src="assets/sketch2-thumb.svg" alt="Sketch: measurement diagram" />
         </button>
-        <button class="thumb" data-full="assets/sketch3.jpg" data-title="Sketch 3: Map excerpt">
-          <img src="assets/sketch3-thumb.jpg" alt="Sketch: map excerpt" />
+        <button class="thumb" data-full="assets/sketch3.svg" data-title="Sketch: Map excerpt" data-category="maps">
+          <img src="assets/sketch3-thumb.svg" alt="Sketch: map excerpt" />
         </button>
       </div>
     </section>
@@ -125,32 +121,31 @@
       <h3>Photographic gallery</h3>
       <p class="muted">Field photos and laboratory images</p>
       <div class="gallery grid" id="photo-grid">
-        <button class="thumb" data-full="assets/photo1.jpg" data-title="Field photo 1">
-          <img src="assets/photo1-thumb.jpg" alt="Field photo 1" />
+        <button class="thumb" data-full="assets/photo1.svg" data-title="Field photo: fold in limestone">
+          <img src="assets/photo1-thumb.svg" alt="Field photo: fold in limestone" />
         </button>
-        <button class="thumb" data-full="assets/photo2.jpg" data-title="Lab image">
-          <img src="assets/photo2-thumb.jpg" alt="Lab image" />
+        <button class="thumb" data-full="assets/photo2.svg" data-title="Laboratory thin section">
+          <img src="assets/photo2-thumb.svg" alt="Laboratory thin section" />
         </button>
       </div>
     </section>
 
     <section class="container section" id="about">
       <h3>About</h3>
-      <p>Dr. [Father's Name] — brief biography. Academic positions, main research areas, notable awards. Keep this concise and include links to CV or ORCID if applicable.</p>
+      <p>Dr. Rauf Nizami — geologist with decades of experience in regional mapping, stratigraphy, and structural interpretation. Academic positions and notable work are summarized here.</p>
       <address id="contact">
         <strong>Contact</strong><br/>
-        Email: <a href="mailto:your.email@example.com">your.email@example.com</a><br/>
+        Email: <a href="mailto:rauf.nizami+pakgeo@gmail.com">rauf.nizami+pakgeo@gmail.com</a><br/>
         For permissions or high-resolution files, please use the email above.
       </address>
     </section>
   </main>
 
   <footer class="site-footer container">
-    <p>&copy; <span id="year"></span> Dr. [Father's Name]. Site by <a href="https://github.com/engineernr1">engineernr1</a>.</p>
+    <p>&copy; <span id="year"></span> Dr. Rauf Nizami. Site by <a href="https://github.com/engineernr1">engineernr1</a>.</p>
     <p class="muted">This site shares writings for educational purposes. If you need a specific license or restrictions, adjust the footer accordingly.</p>
   </footer>
 
-  <!-- Modal for image preview -->
   <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
     <button class="modal-close" aria-label="Close preview">&times;</button>
     <figure class="modal-content">
