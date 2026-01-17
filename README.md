@@ -1,4 +1,4 @@
-# Landing page for Dr. [Father's Name]
+# Landing page for Dr. Abdur Rauf Nizami
 
 This is a small static website template to present books, articles, sketches, and photographs.
 
