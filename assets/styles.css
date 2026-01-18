@@ -276,10 +276,13 @@ a:focus-visible,
   }
 
   /* Hero */
-  .hero-inner {
-    grid-template-columns: 1fr;
-    text-align: center;
+  .hero {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 3rem;
+  align-items: center;
   }
+
 
   .hero img {
     margin: 0 auto;
