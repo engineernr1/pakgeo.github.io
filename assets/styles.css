@@ -153,6 +153,20 @@ body {
   transform: translateY(-1px);
 }
 
+.theme-toggle {
+  margin-top: 0.75rem;
+  padding: 0.5rem 0.75rem;
+
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+
 /* ===== GRID ===== */
 .grid {
   display: grid;
@@ -254,21 +268,30 @@ a:focus-visible,
     margin-left: auto;
   }
 
-  /* Mobile nav (pushes content) */
+  /* Push-down mobile menu with animation */
   .main-nav {
-    display: none;
-    flex-direction: column;
-    gap: 1rem;
+    display: block;
+    overflow: hidden;
+
+    max-height: 0;
+    opacity: 0;
+
+    transition:
+      max-height 0.35s ease,
+      opacity 0.25s ease;
 
     margin-top: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
 
     border-top: 1px solid var(--border);
   }
 
   .main-nav.is-open {
-    display: flex;
+    max-height: 500px; /* safely larger than menu height */
+    opacity: 1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .main-nav a {
@@ -300,4 +323,17 @@ a:focus-visible,
   .card {
     background: #020617;
   }
+  
+  /* ===== MANUAL DARK MODE ===== */
+.theme-dark {
+  --bg: #0f172a;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --border: #1f2933;
+}
+
+.theme-dark .card {
+  background: #020617;
+}
+
 }

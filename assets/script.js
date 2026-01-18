@@ -98,5 +98,21 @@ if (toggle && nav) {
   });
 }
 
+// ===== THEME TOGGLE =====
+const themeToggle = document.querySelector('.theme-toggle');
+
+if (themeToggle) {
+  themeToggle.addEventListener('click', () => {
+    const isDark = document.documentElement.classList.toggle('theme-dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  });
+}
+
+// Load saved theme
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark') {
+  document.documentElement.classList.add('theme-dark');
+}
+
 
 });
