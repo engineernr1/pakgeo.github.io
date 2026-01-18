@@ -75,6 +75,18 @@ body {
   color: var(--text);
 }
 
+/* ===== HEADER (DESKTOP DEFAULT) ===== */
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+}
+
+
 /* ===== HAMBURGER BUTTON ===== */
 .nav-toggle {
   display: none;
@@ -231,6 +243,10 @@ a:focus-visible,
   .header-row {
     display: flex;
     align-items: center;
+  }
+
+  .site-header .container {
+    display: block;
   }
 
   .nav-toggle {
