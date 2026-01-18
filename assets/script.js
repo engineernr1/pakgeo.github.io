@@ -66,9 +66,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-// ===== MOBILE NAV TOGGLE =====
+// ===== MOBILE NAV ENHANCEMENTS =====
 const toggle = document.querySelector('.nav-toggle');
 const nav = document.querySelector('.main-nav');
+
+function closeMenu() {
+  nav.classList.remove('is-open');
+  toggle.classList.remove('is-open');
+  toggle.setAttribute('aria-expanded', 'false');
+}
 
 if (toggle && nav) {
   toggle.addEventListener('click', () => {
@@ -76,6 +82,21 @@ if (toggle && nav) {
     toggle.classList.toggle('is-open', isOpen);
     toggle.setAttribute('aria-expanded', isOpen);
   });
+
+  // Close on ESC
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeMenu();
+    }
+  });
+
+  // Close on click outside
+  document.addEventListener('click', (e) => {
+    if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+      closeMenu();
+    }
+  });
 }
+
 
 });
