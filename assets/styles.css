@@ -195,22 +195,22 @@ body {
 }
 
 /* ===== LIST ===== */
-.article-list {
+.articles-list {
   list-style: none;
   max-width: 700px;
 }
 
-.article-list li {
+.articles-list li {
   padding: 1rem 0;
   border-bottom: 1px solid var(--border);
 }
 
-.article-list a {
+.articles-list a {
   text-decoration: none;
   color: inherit;
 }
 
-.article-list span {
+.articles-list span {
   color: var(--muted);
   font-size: 0.95rem;
 }
