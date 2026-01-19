@@ -42,6 +42,7 @@ body {
 /* ===== HEADER ===== */
 .site-header {
   border-bottom: 1px solid var(--border);
+  padding: 2rem 0;
 }
 
 .header-row {
@@ -108,6 +109,10 @@ body {
 /* ===== HERO ===== */
 .hero {
   padding: 5rem 0;
+  display: flex;
+  align-items: center; /* vertically align image + text */
+  justify-content: left; /* optional spacing */
+  gap: 4rem; /* space between image and text */
 }
 
 .hero-inner {
@@ -119,9 +124,9 @@ body {
 
 .hero img {
   width: 220px;
-  height: 220px;
+  height: 275px;
   border-radius: var(--radius-lg);
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .hero h2 {
@@ -175,9 +180,12 @@ body {
 }
 
 .card img {
-  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
   height: 180px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .card-body {
