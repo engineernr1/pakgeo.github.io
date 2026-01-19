@@ -3,10 +3,13 @@
 <script type="module">
   import EmbedPDF from 'https://cdn.jsdelivr.net/npm/@embedpdf/snippet@2/dist/embedpdf.js';
  
+  const params = new URLSearchParams(window.location.search);
+  const file = params.get('file');
+ 
   EmbedPDF.init({
     type: 'container',
     target: document.getElementById('pdf-viewer'),
-    src: 'assets/books/book1_geotec.pdf',
+    src: 'assets/books/' + file,
     theme: { preference: 'system' }
   });
 </script>
