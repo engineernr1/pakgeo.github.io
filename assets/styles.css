@@ -226,6 +226,9 @@ font-family: Jameel Noori Nastaleeq;
 .articles-list a {
   text-decoration: none;
   color: inherit;
+  font-family: Jameel Noori Nastaleeq;
+  font-size: 1.25rem
+
 }
 
 .articles-list span {
