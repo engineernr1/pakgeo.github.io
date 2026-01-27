@@ -29,6 +29,8 @@ body {
 
 .urduh {
 font-family: Jameel Noori Nastaleeq;
+text-align: right;
+direction: rtl;
 }
 
 /* ===== LAYOUT ===== */
@@ -212,29 +214,63 @@ font-family: Jameel Noori Nastaleeq;
   margin: 0.75rem 0;
 }
 
-/* ===== LIST ===== */
-.articles-list {
-  list-style: none;
-  max-width: 700px;
+/* ===== CONTAINER ===== */
+.articles-columns {
+  display: flex;
+  justify-content: space-between; /* Distribute space between the columns */
+  gap: 20px; /* Adds some space between the two columns */
 }
 
-.articles-list li {
+.articles-list, .eng-articles-list {
+  list-style-type: none;
+  width: 48%;
+  display: flex;
+  flex-direction: column; /* Makes the list items stack vertically */
+  justify-content: space-between; /* Ensures the items are spread across the height of the container */
+}
+
+.articles-list li, .eng-articles-list li {
   padding: 1rem 0;
   border-bottom: 1px solid var(--border);
+  flex-grow: 1; /* Ensures the list items grow to fill the container */
+  display: flex;
+  align-items: center; /* Vertically center the text in the list item */
+}
+
+.eng-articles-list a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.1rem;
+  width: 100%; /* Makes the link take up the full width of the list item */
+  display: block;
+}
+
+.articles-list span, .eng-articles-list span {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.eng-articles-list {
+  text-align: left; /* Left-align English text */
+  direction: ltr; /* Left-to-right direction for English */
+}
+
+/* ===== SPECIAL STYLING FOR URDU ===== */
+.articles-list {
+  text-align: right; /* Right-align Urdu text */
+  direction: rtl; /* Right-to-left direction for Urdu */
 }
 
 .articles-list a {
   text-decoration: none;
   color: inherit;
   font-family: Jameel Noori Nastaleeq;
-  font-size: 1.25rem
-
+  font-size: 1.25rem;
+  width: 100%; /* Makes the link take up the full width of the list item */
+  display: block;
 }
 
-.articles-list span {
-  color: var(--muted);
-  font-size: 0.95rem;
-}
+
 
 /* ===== GALLERY ===== */
 .gallery img {

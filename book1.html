@@ -1,15 +1,31 @@
 <div id="pdf-viewer" style="height: 100vh"></div>
- 
+
 <script type="module">
   import EmbedPDF from 'https://cdn.jsdelivr.net/npm/@embedpdf/snippet@2/dist/embedpdf.js';
- 
+
   const params = new URLSearchParams(window.location.search);
   const file = params.get('file');
- 
+  const pdfType = params.get('pdf_type');
+
+  const basePaths = {
+    urdu_book: 'assets/books/urdu/',
+    english_book: 'assets/books/english',
+    urdu_article: 'assets/articles/urdu/'
+  };
+
+  let src = '';
+
+  if (pdfType && file && basePaths[pdfType]) {
+    src = basePaths[pdfType] + file;
+  } else {
+    console.warn('Invalid params, loading fallback PDF');
+    src = 'assets/fallback.pdf';
+  }
+
   EmbedPDF.init({
     type: 'container',
     target: document.getElementById('pdf-viewer'),
-    src: 'assets/books/' + file,
+    src,
     theme: { preference: 'system' }
   });
 </script>
